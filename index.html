@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Aries-sushi.GitHub.io by Aries-Sushi</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
 
@@ -12,10 +13,10 @@
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+    <!-- [if lt IE 9] >
       <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->    
+    <![endif]  -->
   </head>
   <body class="body-container">
     <div class="blank">  <!-- 空白div -->
@@ -24,46 +25,157 @@
       <div class="nav-container">
         <ul class="nav-ul">
           <li class="brand"><a class="brand-a" href="#">BLOG</a></li>
-          <li class="nav-list"><a class="nav-a" href="#">ABOUT ME</a></li>
-          <li class="nav-list"><a class="nav-a" href="#">BLOG</a></li>
-          <li class="nav-list"><a class="nav-a" href="#">HOME</a></li>
+          <li class="nav-list"><a class="nav-a" href="aboutme.html">ABOUT ME</a></li>
+          <li class="nav-list active"><a class="nav-a" href="#">HOME</a></li>
         </ul> 
       </div>
     </div>  <!-- 头部导航结束 -->
     <div class="clear"></div>   <!-- 空div用来清浮动 -->
 
     <div class="carousel-container">    <!-- 轮播图区域开始 -->
-      <div class="carousel-list">
-        <ul>
-          <li></li>
-        </ul>  
+      <div id="myCarousel" class="carousel fade in">
+
+        <div class="carousel-inner">
+          <div class="item active">
+             <img src="images/audio1.gif" alt="宋东野">
+             <audio class="audio-control" src="audio/宋冬野莉莉安.mp3" controls="controls" autoplay="autoplay"></audio>
+          </div>
+          <div class="item">
+             <img src="images/audio2.jpg" alt="苏运莹">
+             <audio class="audio-control" src="audio/苏运莹萤火虫.mp3" controls="controls"></audio>
+          </div>
+          <div class="item">
+             <img src="images/audio3.jpg" alt="bobdylan">
+             <audio class="audio-control" src="audio/DylanBlowin'intheWind.mp3" controls="controls"></audio>
+          </div>
+       </div>    
+ 
       </div>
-      <div class="pre"><a style="text-decoration:none; color:white"><</a>
+      <div class="pre">
+        <a style="text-decoration:none; color:white" href="#myCarousel" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a>
       </div>
-      <div class="next"><a style="text-decoration:none; color:white">></a>
+      <div class="next">
+        <a style="text-decoration:none; color:white" href="#myCarousel"  data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
       </div> 
     </div>    <!-- 轮播图区域结束 -->
 
     <div class="main-container">    <!-- 主要内容部分开始 -->
-      <div class="main-left">
-        <div class="blog-list">
-          <div class="blog-header">
-            <h2>第一篇</h2>
-          </div>
-          <div class="blog-brief">
-            <p>第一篇的内容</p>
-          </div>  
-        </div> 
+      <div class="col-sm-6 col-md-3">
+            <div class="thumbnail">
+              <a href="articals/artical1/artical1.html"><img src="articals/artical1/images/artical1.4.jpg" 
+               alt="图片-旧香"></a>
+            </div>
+            <div class="caption">
+               <p>旧香</p>
+            </div>  
       </div>
-      <div class="main-right">
+      <div class="col-sm-6 col-md-3">
+            <div class="thumbnail">
+              <a href="articals/artical2/artical2.html"> <img src="articals/artical2/images/artical2.1.jpg" 
+               alt="图片-光"></a>
+            </div>
+            <div class="caption">
+               <p>光</p>              
+            </div>  
+      </div>
+      <div class="col-sm-6 col-md-3">
+            <div class="thumbnail">
+              <a href="articals/artical3/artical3.html"> <img src="articals/artical3/images/artical3.1.jpg" 
+               alt="图片-天空和飞鸟"></a>
+            </div>
+            <div class="caption">
+               <p>飞鸟</p>
+            </div>  
       </div>  
+      <div class="col-sm-6 col-md-3">
+            <div class="thumbnail">
+              <a href="articals/artical4/artical4.html"> <img src="articals/artical4/images/artical4.1.jpg" 
+               alt="图片-霾"></a>
+            </div>
+            <div class="caption">
+               <p>霾</p> 
+            </div>  
+      </div> 
+      <div class="col-sm-6 col-md-3">
+            <div class="thumbnail">
+              <a href="articals/artical5/artical5.html"> <img src="articals/artical5/images/artical5.1.jpg" 
+               alt="图片-大盗菜花"></a>
+            </div>
+            <div class="caption">
+               <p>大盗采花</p>
+            </div>  
+      </div>
+      <div class="col-sm-6 col-md-3">
+            <div class="thumbnail">
+              <a href="articals/artical6/artical6.html"> <img src="articals/artical6/images/artical6.1.jpg" 
+               alt="图片-路边的牵牛花"></a>
+            </div>
+            <div class="caption">
+               <p>路边的牵牛花</p>              
+            </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+            <div class="thumbnail">
+              <a href="articals/artical7/artical7.html"> <img src="articals/artical7/images/artical7.1.jpg" 
+               alt="图片-细嗅蔷薇"></a>
+            </div>
+            <div class="caption">
+               <h5>细嗅蔷薇</h5>            
+            </div>
+      </div>  
+      <div class="col-sm-6 col-md-3">
+            <div class="thumbnail">
+              <a href="articals/artical8/artical8.html"> <img src="articals/artical8/images/artical8.1.jpg" 
+               alt="图片-初夏的捧花"></a>
+            </div>
+            <div class="caption">
+               <h5>初夏的捧花</h5>           
+            </div>
+      </div>
+
+      <div class="blank">
+      </div>                                                
     </div>    <!-- 主要内容部分结束 -->
-    <div class="site-footer">   <!-- 页脚部分开始 -->
+    <div class="footer-container">   <!-- 页脚部分开始 -->
+      <div class="footer-content">
+        <span style="width:30px; font-family:微软雅黑;">获取模板源码</span><span class="glyphicon glyphicon-hand-right" style="width:30px;"></span><a style="color:white" href="https://github.com/Aries-Sushi/Aries-Sushi.github.io">Github/Aries-Sushi</a>
+      </div>  
     </div>    <!-- 页脚部分结束 -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="bootstrap-3.3.5-dist/js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>  
+    <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+<script>
+   $(function(){
+      // 初始化轮播
+      $(document).ready((function(){
+         $("#myCarousel").carousel('cycle');
+      }));
+      // 停止轮播
+      $(".pause-slide").click(function(){
+         $("#myCarousel").carousel('pause');
+      });
+      // 循环轮播到上一个项目
+      $(".prev-slide").click(function(){
+         $("#myCarousel").carousel('prev');
+      });
+      // 循环轮播到下一个项目
+      $(".next-slide").click(function(){
+         $("#myCarousel").carousel('next');
+      });
+      // 循环轮播到某个特定的帧 
+      $(".slide-one").click(function(){
+         $("#myCarousel").carousel(0);
+      });
+      $(".slide-two").click(function(){
+         $("#myCarousel").carousel(1);
+      });
+      $(".slide-three").click(function(){
+         $("#myCarousel").carousel(2);
+      });
+   });
+</script>
+
   </body>
 </html>
