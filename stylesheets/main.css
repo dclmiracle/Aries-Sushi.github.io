@@ -44,7 +44,7 @@ h6{ font-size:20px; }
 	margin: 0 auto;
 	width: 1000px;
 	height: 52px;
-	background-color: #343434
+	background-color: #343434;
 }
 
 .active
@@ -81,6 +81,13 @@ h6{ font-size:20px; }
 	font-size: 28px;
 	color: white;
 }
+
+.brand-a:link, .brand-a:visited, .brand-a:hover, .brand-a:active
+{
+	text-decoration: none;
+	color: white;
+}
+
 .nav-list
 {
 	float: right;
@@ -119,12 +126,30 @@ a.nav-a:link, a.nav-a:visited, a.nav-a:hover,  a.nav-a:active
 	position: relative;
 	width: 1000px;
 	height: 317px;
-	background-color: yellow;
+/*	background-color: #02C874;*/
+	position: relative;
 }
 
-ul 
+.carousel-inner img
 {
-	list-style: none;
+	display: block;
+	width: auto;
+	height: 317px;
+}
+
+.audio-control
+{
+	position: absolute;
+	bottom: 20px;
+	right: 0px;
+	opacity: 0.6;
+	filter:alpha(opacity: 0.6);
+}
+
+.audio-control:hover
+{
+	opacity: 1;
+	filter:alpha(opacity: 0.8);
 }
 
 .pre 
@@ -162,25 +187,212 @@ ul
 	-webkit-transition: background-color 1s;
 }
 
+.pre a, .next a
+{
+	display: block;
+	width: 40px;
+	height: 40px;
+}
+
 .main-container
 {
 	margin: 0 auto;
 	margin-top: 30px;
 	width: 1000px;
 	clear: both;
-	background-color: green;
 }
 
-.main-left 
+.thumbnail:hover  
 {
-	float: left;
-	width: 685px;
-	background-color: #fcfcfc;
+	background-color: #343434;
 }
 
-.main-right 
+.caption h1, h2, h3, h4, h5, h6, p 
 {
-	float: right;
-	width: 285px;
+	font-family: 微软雅黑;
+}
+
+.footer-container
+{
+	width: 100%;
+	height: 73px;
+	clear: both;
+}
+
+.footer-content
+{
+	margin: 0 auto;
+	display: block;
+	width: 1000px;
+	height: 73px;
+	line-height: 73px;
+	background-color:#343434;
+	text-align: center;
+	color: white;
+}
+
+/*css for artical */
+.content-container
+{
+	margin: 0 auto;
+	margin-top: 50px;
+	width:1000px;
+	min-height:1000px; 
+	*height: 1000px;
+	_height:1000px;
 	background-color: white;
+}
+
+.content
+{
+	margin: 0 auto;
+	width: 700px;
+	background-color: white;
+
+}
+
+.content-header
+{
+	width: 700px;
+	height: auto;
+	padding: 20px 0px; 
+	text-align: center;
+}
+
+.content-header h3
+{
+	display: inline-block;
+	width: auto;
+	padding: 10px 20px;
+	font-family: 微软雅黑;
+	border-bottom:  solid 1px #D3D3D3;  	
+}
+
+
+.content-body
+{
+	width: 700px;
+	height: auto;	
+}
+
+.content-body img
+{
+	display: block;
+	width: 700px;
+	height: auto;
+	margin-bottom: 30px;
+}
+
+.like
+{
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color: #D3D3D3;
+	position: fixed;
+	top:50%;
+	margin-top: -52px;
+	left:50%;
+	margin-left: 501px;
+	text-align: center;
+}
+
+.favourate
+{
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	background-color: #D3D3D3;
+	position: fixed;
+	top:50%;
+	left:50%;
+	margin-left: 501px;
+	text-align: center;
+}
+
+.dislike
+{
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background-color: #D3D3D3;
+	position: fixed;
+	top:50%;
+	margin-top: 52px;
+	left:50%;
+	margin-left: 501px;
+	text-align: center;
+}
+
+.like:hover, .favourate:hover, .dislike:hover
+{
+	background-color: #DBDBDB;
+}
+
+/*css for about me*/
+.introduce-container
+{
+	width: 100%;
+	height:700px ! important ;
+	min-height: 700px;
+	text-align: center;
+}
+
+.picture
+{
+	width: auto;
+	height: auto;
+}
+
+.picture img 
+{
+	display: block;
+	margin: 0 auto;
+	padding: 2px;
+	background-color: #E6E6FA;
+}
+
+.introduce
+{
+	margin-top: 15px;
+	text-align: center;
+}
+
+.contact
+{
+	margin: 0 auto;
+	text-align: center;
+	width: 300px;
+/*	background-color: gray;*/
+}
+
+.contact span
+{
+	display: inline-block;
+	width: 60px;
+	height: 40px;
+	line-height: 40px;
+	font-family:微软雅黑;
+	/*background-color: yellow;*/
+}
+
+.dropdown
+{
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content
+{
+	display: none;
+	position: absolute;
+	box-shadow: 0px 8px 16px 0px #8E8E8E;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
