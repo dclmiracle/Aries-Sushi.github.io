@@ -18,23 +18,19 @@
       <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]  -->
   </head>
-  <body class="body-container">
-    <div class="blank">  <!-- 空白div -->
-    </div>  <!-- 空白div结束 -->
+  <body class="body-container clear">
     <div class="header">    <!-- 头部导航开始 -->
-      <div class="nav-container">
+      <nav class="nav-container">
         <ul class="nav-ul">
           <li class="brand"><a class="brand-a" href="#">BLOG</a></li>
           <li class="nav-list"><a class="nav-a" href="aboutme.html">ABOUT ME</a></li>
           <li class="nav-list active"><a class="nav-a" href="#">HOME</a></li>
         </ul> 
-      </div>
+      </nav>
     </div>  <!-- 头部导航结束 -->
-    <div class="clear"></div>   <!-- 空div用来清浮动 -->
 
-    <div class="carousel-container">    <!-- 轮播图区域开始 -->
-      <div id="myCarousel" class="carousel fade in">
-
+    <div class="carousel-container clear">    <!-- 轮播图区域开始 -->
+      <div id="myCarousel" class="carousel">    <!-- 轮播内容开始 -->
         <div class="carousel-inner">
           <div class="item active">
              <img src="images/audio1.gif" alt="宋东野">
@@ -48,18 +44,17 @@
              <img src="images/audio3.jpg" alt="bobdylan">
              <audio class="audio-control" src="audio/DylanBlowin'intheWind.mp3" controls="controls"></audio>
           </div>
-       </div>    
- 
-      </div>
-      <div class="pre">
+        </div>    
+      </div>    <!-- 轮播内容结束 -->
+      <div class="pre">   <!-- 轮播按钮开始 -->
         <a style="text-decoration:none; color:white" href="#myCarousel" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a>
       </div>
       <div class="next">
         <a style="text-decoration:none; color:white" href="#myCarousel"  data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
-      </div> 
+      </div>    <!-- 轮播按钮结束 -->
     </div>    <!-- 轮播图区域结束 -->
 
-    <div class="main-container">    <!-- 主要内容部分开始 -->
+    <div class="main-container clear">    <!-- 主要内容部分开始 -->
       <div class="col-sm-6 col-md-3">
             <div class="thumbnail">
               <a href="articals/artical1/artical1.html"><img src="articals/artical1/images/artical1.4.jpg" 
@@ -131,12 +126,10 @@
             <div class="caption">
                <h5>初夏的捧花</h5>           
             </div>
-      </div>
-
-      <div class="blank">
-      </div>                                                
+      </div>                                              
     </div>    <!-- 主要内容部分结束 -->
-    <div class="footer-container">   <!-- 页脚部分开始 -->
+
+    <div class="footer-container clear">   <!-- 页脚部分开始 -->
       <div class="footer-content">
         <span style="width:30px; font-family:微软雅黑;">获取模板源码</span><span class="glyphicon glyphicon-hand-right" style="width:30px;"></span><a style="color:white" href="https://github.com/Aries-Sushi/Aries-Sushi.github.io">Github/Aries-Sushi</a>
       </div>  
@@ -146,36 +139,36 @@
     <script src="bootstrap-3.3.5-dist/js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
-<script>
-   $(function(){
-      // 初始化轮播
-      $(document).ready((function(){
-         $("#myCarousel").carousel('cycle');
-      }));
-      // 停止轮播
-      $(".pause-slide").click(function(){
-         $("#myCarousel").carousel('pause');
-      });
-      // 循环轮播到上一个项目
-      $(".prev-slide").click(function(){
-         $("#myCarousel").carousel('prev');
-      });
-      // 循环轮播到下一个项目
-      $(".next-slide").click(function(){
-         $("#myCarousel").carousel('next');
-      });
-      // 循环轮播到某个特定的帧 
-      $(".slide-one").click(function(){
-         $("#myCarousel").carousel(0);
-      });
-      $(".slide-two").click(function(){
-         $("#myCarousel").carousel(1);
-      });
-      $(".slide-three").click(function(){
-         $("#myCarousel").carousel(2);
-      });
-   });
-</script>
+    <script>
+       $(function(){
+          // 初始化轮播
+          $(document).ready((function(){
+             $("#myCarousel").carousel('cycle');
+          }));
+          // 停止轮播
+          $(".pause-slide").click(function(){
+             $("#myCarousel").carousel('pause');
+          });
+          // 循环轮播到上一个项目
+          $(".prev-slide").click(function(){
+             $("#myCarousel").carousel('prev');
+          });
+          // 循环轮播到下一个项目
+          $(".next-slide").click(function(){
+             $("#myCarousel").carousel('next');
+          });
+          // 循环轮播到某个特定的帧 
+          $(".slide-one").click(function(){
+             $("#myCarousel").carousel(0);
+          });
+          $(".slide-two").click(function(){
+             $("#myCarousel").carousel(1);
+          });
+          $(".slide-three").click(function(){
+             $("#myCarousel").carousel(2);
+          });
+       });
+    </script>
 
   </body>
 </html>
