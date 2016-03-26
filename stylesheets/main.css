@@ -118,7 +118,7 @@ a.nav-a:link, a.nav-a:visited, a.nav-a:hover,  a.nav-a:active
 	position: relative;
 	width: 1000px;
 	height: 317px;
-/*	background-color: #02C874;*/
+	background-color: transparent;
 	position: relative;
 }
 
