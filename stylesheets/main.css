@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300,600,700);
+
 /* Font Formats 
 font-family: 'Open Sans', sans-serif;
 font-family: 'Montserrat', sans-serif;
@@ -71,6 +71,7 @@ h6{ font-size:20px; }
 	text-decoration: none;
 	font-size: 28px;
 	font-weight: bold;
+	font-family: sans-serif;
 	color: white;
 }
 
@@ -101,7 +102,7 @@ background-color: #02C874;
 	color: white;
 	font-size: 14px;
 	font-weight: bold;
-	font: bold;
+	font-family: sans-serif;
 }
 
 a.nav-a:link, a.nav-a:visited, a.nav-a:hover,  a.nav-a:active 
